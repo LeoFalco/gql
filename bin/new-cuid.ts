@@ -1,4 +1,4 @@
-const cuid = require('cuid')
+import cuid from 'cuid'
 
 console.log(cuid())
 process.exit(0)

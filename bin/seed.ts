@@ -1,14 +1,6 @@
-const { mutate } = require('../src/graphql/client')
-const {
-  INSERIR_FINALIZADORA,
-  INSERIR_PRODUTO,
-  INSERIR_CLIENTE,
-  ABRIR_ATENDIMENTO,
-  LANCAR_ITEM,
-  LANCAR_PAGAMENTO,
-  ALTERAR_STATUS,
-  AUDITAR_EARQUIVAR
-} = require('../src/graphql/query')
+import mutate from '../src/graphql/client'
+import  INSERIR_FINALIZADORA, INSERIR_PRODUTO, INSERIR_CLIENTE, ABRIR_ATENDIMENTO, LANCAR_ITEM, LANCAR_PAGAMENTO, ALTERAR_STATUS, AUDITAR_EARQUIVAR from '../src/graphql/query'
+import { Finalizadora, Produto } from '@prisma/client'
 
 const credito = {
   finalizadoraInput: {
@@ -31,13 +23,14 @@ const dinheiro = {
   }
 }
 
-const promisses = []
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const promisses: any[] = []
 
 promisses.push(
   mutate({
     mutation: INSERIR_FINALIZADORA,
     variables: credito
-  }).then(result => {
+  }).then((result: Finalizadora) => {
     console.log(result)
   })
 )
@@ -46,7 +39,7 @@ promisses.push(
   mutate({
     mutation: INSERIR_FINALIZADORA,
     variables: debito
-  }).then(result => {
+  }).then((result: Finalizadora) => {
     console.log(result)
   })
 )
@@ -55,7 +48,7 @@ promisses.push(
   mutate({
     mutation: INSERIR_FINALIZADORA,
     variables: dinheiro
-  }).then(result => {
+  }).then((result: Finalizadora) => {
     console.log(result)
   })
 )
@@ -91,7 +84,7 @@ promisses.push(
   mutate({
     mutation: INSERIR_PRODUTO,
     variables: coca
-  }).then(result => {
+  }).then((result: Produto) => {
     console.log(result)
   })
 )
@@ -100,7 +93,7 @@ promisses.push(
   mutate({
     mutation: INSERIR_PRODUTO,
     variables: lanche
-  }).then(result => {
+  }).then((result: Produto) => {
     console.log(result)
   })
 )
@@ -109,7 +102,7 @@ promisses.push(
   mutate({
     mutation: INSERIR_PRODUTO,
     variables: batataRustica
-  }).then(result => {
+  }).then((result: Produto) => {
     console.log(result)
   })
 )
@@ -148,7 +141,7 @@ promisses.push(
   mutate({
     mutation: INSERIR_CLIENTE,
     variables: deneris
-  }).then(result => {
+  }).then((result: Produto) => {
     console.log(result)
   })
 )
@@ -157,7 +150,7 @@ promisses.push(
   mutate({
     mutation: INSERIR_CLIENTE,
     variables: leo
-  }).then(result => {
+  }).then((result: Produto) => {
     console.log(result)
   })
 )
@@ -206,12 +199,11 @@ const pagamentoNoDinheiroComTroco = {
     valor: 10,
     troco: 5,
     idFinalizadora: 'cjld2cyuq0000t3rmniod1foy'
-
   }
 }
 
 const auditarAtendimento = {
-  idAtendimento: 'ck6iexb0f0002g0mcn11ur1u3'
+  idAtendimento: 'ck6iexb0f-0002g0mcn11ur1u3'
 }
 
 const confirmado = {
@@ -224,8 +216,7 @@ const emEntrega = {
   status: 'EM_ENTREGA'
 }
 
-lancarAtendimento()
-async function lancarAtendimento () {
+async function lancarAtendimento (): Promise<void> {
   await Promise.all(promisses) // aguardar todos os cadastro serem realizados
 
   console.log(atendimentoDeneris)
@@ -301,3 +292,5 @@ async function lancarAtendimento () {
   })
   console.log(atendimentoAuditado)
 }
+
+lancarAtendimento()

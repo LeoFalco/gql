@@ -1,6 +1,6 @@
-const { startServer } = require('./server')
+import server from './server'
 
-startServer()
+server.startServer()
   .catch(error => {
     console.error(error)
     process.exit(-1000)

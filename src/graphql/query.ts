@@ -1,4 +1,4 @@
-const { gql } = require('apollo-boost')
+import { gql } from 'apollo-boost'
 
 const INSERIR_FINALIZADORA = gql` 
 mutation inserirFinalizadora($finalizadoraInput: FinalizadoraInput!) {
@@ -242,7 +242,7 @@ mutation alterarStatus($idAtendimento: String!, $status: Status!) {
 }
 `
 
-module.exports = {
+export default {
   INSERIR_FINALIZADORA,
   INSERIR_PRODUTO,
   INSERIR_CLIENTE,
