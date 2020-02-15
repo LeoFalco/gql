@@ -1,6 +1,6 @@
 import { gql } from 'apollo-boost'
 
-const INSERIR_FINALIZADORA = gql` 
+export const INSERIR_FINALIZADORA = gql` 
 mutation inserirFinalizadora($finalizadoraInput: FinalizadoraInput!) {
   inserirFinalizadora(finalizadoraInput: $finalizadoraInput) {
     id
@@ -9,7 +9,7 @@ mutation inserirFinalizadora($finalizadoraInput: FinalizadoraInput!) {
 }
 `
 
-const INSERIR_PRODUTO = gql`
+export const INSERIR_PRODUTO = gql`
 mutation inserirProduto($produtoInput: ProdutoInput!) {
   inserirProduto(produtoInput: $produtoInput) {
     id
@@ -19,7 +19,7 @@ mutation inserirProduto($produtoInput: ProdutoInput!) {
 }
 `
 
-const INSERIR_CLIENTE = gql`
+export const INSERIR_CLIENTE = gql`
 mutation inserirCliente(
   $clienteInput: ClienteInput!
   $enderecoInput: EnderecoInput
@@ -38,7 +38,8 @@ mutation inserirCliente(
   }
 }
 `
-const ATENDIMENTOS = gql`query {
+
+export const ATENDIMENTOS = gql`query {
   atendimentos {
     id
     dataAbertura
@@ -82,7 +83,7 @@ const ATENDIMENTOS = gql`query {
 }
 `
 
-const ABRIR_ATENDIMENTO = gql`
+export const ABRIR_ATENDIMENTO = gql`
 mutation abrirAtendimento($atendimentoInput: AtendimentoInput!) {
   abrirAtendimento(atendimentoInput: $atendimentoInput) {
     id
@@ -127,7 +128,7 @@ mutation abrirAtendimento($atendimentoInput: AtendimentoInput!) {
 }
 `
 
-const LANCAR_ITEM = gql`
+export const LANCAR_ITEM = gql`
 mutation lancarItem($idAtendimento: String!, $itemInput: ItemInput!) {
   lancarItem(idAtendimento: $idAtendimento, itemInput: $itemInput) {
     id
@@ -151,7 +152,7 @@ mutation lancarItem($idAtendimento: String!, $itemInput: ItemInput!) {
 }  
 `
 
-const LANCAR_PAGAMENTO = gql`
+export const LANCAR_PAGAMENTO = gql`
 mutation lancarPagamento(
   $idAtendimento: String!
   $pagamentoInput: PagamentoInput!
@@ -179,7 +180,7 @@ mutation lancarPagamento(
 }
 `
 
-const AUDITAR_EARQUIVAR = gql`
+export const AUDITAR_EARQUIVAR = gql`
 mutation auditarEArquivar($idAtendimento: String!) {
   auditarEArquivar(idAtendimento: $idAtendimento) {
     id
@@ -225,7 +226,7 @@ mutation auditarEArquivar($idAtendimento: String!) {
 }
 `
 
-const PRODUTOS = gql`
+export const PRODUTOS = gql`
 query {
   produtos {
     id
@@ -234,23 +235,10 @@ query {
 }
 `
 
-const ALTERAR_STATUS = gql`
+export const ALTERAR_STATUS = gql`
 mutation alterarStatus($idAtendimento: String!, $status: Status!) {
   alterarStatus(idAtendimento: $idAtendimento, status: $status) {
     status
   }
 }
 `
-
-export default {
-  INSERIR_FINALIZADORA,
-  INSERIR_PRODUTO,
-  INSERIR_CLIENTE,
-  ABRIR_ATENDIMENTO,
-  LANCAR_ITEM,
-  LANCAR_PAGAMENTO,
-  ALTERAR_STATUS,
-  AUDITAR_EARQUIVAR,
-  ATENDIMENTOS,
-  PRODUTOS
-}

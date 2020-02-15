@@ -86,7 +86,7 @@ export class AtendimentoService {
     }
 
     if (itemInput.id) {
-      const item = await prisma.item.findOne({
+      const item = await this.prisma.item.findOne({
         where: {
           id: itemInput.id
         },
@@ -109,7 +109,7 @@ export class AtendimentoService {
       valor: itemInput.quantidade * produto.preco
     }
 
-    await prisma.item.upsert({
+    await this.prisma.item.upsert({
       create: {
         ...item,
         produto: {
@@ -141,7 +141,7 @@ export class AtendimentoService {
       }
     })
 
-    const atendimentoComItens = await prisma.atendimento.findOne({
+    const atendimentoComItens = await this.prisma.atendimento.findOne({
       where: {
         id: idAtendimento
       },
@@ -160,7 +160,7 @@ export class AtendimentoService {
         return (soma += valorAtual)
       }, 0)
 
-    const atendimentoAtualizado = await prisma.atendimento.update({
+    const atendimentoAtualizado = await this.prisma.atendimento.update({
       where: {
         id: idAtendimento
       },
@@ -439,7 +439,7 @@ export class AtendimentoService {
       }
     })
 
-    const atendimentoComPagamentos = await prisma.atendimento.findOne({
+    const atendimentoComPagamentos = await this.prisma.atendimento.findOne({
       where: {
         id: idAtendimento
       },
@@ -455,15 +455,21 @@ export class AtendimentoService {
         return (soma += valorAtual)
       }, 0)
 
-    const data = {
-      valorPago: valorPago
+    const data: {
+      valorPago: number,
+      status: Status
+    } = {
+      valorPago: valorPago,
+      status: Status.ABERTO
     }
 
     if (valorPago === atendimentoComPagamentos.valorTotal) {
       data.status = Status.RECEBIDO
+    } else {
+      delete data.status
     }
 
-    return prisma.atendimento.update({
+    return this.prisma.atendimento.update({
       where: {
         id: idAtendimento
       },

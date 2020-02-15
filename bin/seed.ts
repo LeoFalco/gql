@@ -1,5 +1,6 @@
-import mutate from '../src/graphql/client'
-import  INSERIR_FINALIZADORA, INSERIR_PRODUTO, INSERIR_CLIENTE, ABRIR_ATENDIMENTO, LANCAR_ITEM, LANCAR_PAGAMENTO, ALTERAR_STATUS, AUDITAR_EARQUIVAR from '../src/graphql/query'
+import { client } from '../src/graphql/client'
+
+import * as query from '../src/graphql/query'
 import { Finalizadora, Produto } from '@prisma/client'
 
 const credito = {
@@ -27,28 +28,28 @@ const dinheiro = {
 const promisses: any[] = []
 
 promisses.push(
-  mutate({
-    mutation: INSERIR_FINALIZADORA,
+  client.mutate({
+    mutation: query.INSERIR_FINALIZADORA,
     variables: credito
-  }).then((result: Finalizadora) => {
+  }).then(result => {
     console.log(result)
   })
 )
 
 promisses.push(
-  mutate({
-    mutation: INSERIR_FINALIZADORA,
+  client.mutate({
+    mutation: query.INSERIR_FINALIZADORA,
     variables: debito
-  }).then((result: Finalizadora) => {
+  }).then((result) => {
     console.log(result)
   })
 )
 
 promisses.push(
-  mutate({
-    mutation: INSERIR_FINALIZADORA,
+  client.mutate({
+    mutation: query.INSERIR_FINALIZADORA,
     variables: dinheiro
-  }).then((result: Finalizadora) => {
+  }).then((result) => {
     console.log(result)
   })
 )
@@ -81,28 +82,28 @@ const lanche = {
 }
 
 promisses.push(
-  mutate({
-    mutation: INSERIR_PRODUTO,
+  client.mutate({
+    mutation: query.INSERIR_PRODUTO,
     variables: coca
-  }).then((result: Produto) => {
+  }).then((result) => {
     console.log(result)
   })
 )
 
 promisses.push(
-  mutate({
-    mutation: INSERIR_PRODUTO,
+  client.mutate({
+    mutation: query.INSERIR_PRODUTO,
     variables: lanche
-  }).then((result: Produto) => {
+  }).then((result) => {
     console.log(result)
   })
 )
 
 promisses.push(
-  mutate({
-    mutation: INSERIR_PRODUTO,
+  client.mutate({
+    mutation: query.INSERIR_PRODUTO,
     variables: batataRustica
-  }).then((result: Produto) => {
+  }).then((result) => {
     console.log(result)
   })
 )
@@ -138,19 +139,19 @@ const leo = {
 }
 
 promisses.push(
-  mutate({
-    mutation: INSERIR_CLIENTE,
+  client.mutate({
+    mutation: query.INSERIR_CLIENTE,
     variables: deneris
-  }).then((result: Produto) => {
+  }).then((result) => {
     console.log(result)
   })
 )
 
 promisses.push(
-  mutate({
-    mutation: INSERIR_CLIENTE,
+  client.mutate({
+    mutation: query.INSERIR_CLIENTE,
     variables: leo
-  }).then((result: Produto) => {
+  }).then((result) => {
     console.log(result)
   })
 )
@@ -203,7 +204,7 @@ const pagamentoNoDinheiroComTroco = {
 }
 
 const auditarAtendimento = {
-  idAtendimento: 'ck6iexb0f-0002g0mcn11ur1u3'
+  idAtendimento: 'ck6iexb0f0002g0mcn11ur1u3'
 }
 
 const confirmado = {
@@ -220,50 +221,50 @@ async function lancarAtendimento (): Promise<void> {
   await Promise.all(promisses) // aguardar todos os cadastro serem realizados
 
   console.log(atendimentoDeneris)
-  const atendimentoAberto = await mutate({
-    mutation: ABRIR_ATENDIMENTO,
+  const atendimentoAberto = await client.mutate({
+    mutation: query.ABRIR_ATENDIMENTO,
     variables: atendimentoDeneris
   })
   console.log(atendimentoAberto)
 
   console.log(cocaParaDeneris)
-  const cocaLancada = await mutate({
-    mutation: LANCAR_ITEM,
+  const cocaLancada = await client.mutate({
+    mutation: query.LANCAR_ITEM,
     variables: cocaParaDeneris
   })
   console.log(cocaLancada)
 
   console.log(lancheParaDeneris)
-  const lancheLancado = await mutate({
-    mutation: LANCAR_ITEM,
+  const lancheLancado = await client.mutate({
+    mutation: query.LANCAR_ITEM,
     variables: lancheParaDeneris
   })
   console.log(lancheLancado)
 
   console.log(batataRusticaParaDeneris)
-  const batataLancada = await mutate({
-    mutation: LANCAR_ITEM,
+  const batataLancada = await client.mutate({
+    mutation: query.LANCAR_ITEM,
     variables: batataRusticaParaDeneris
   })
   console.log(batataLancada)
 
   console.log(confirmado)
-  const atendimentoCondirmado = await mutate({
-    mutation: ALTERAR_STATUS,
+  const atendimentoCondirmado = await client.mutate({
+    mutation: query.ALTERAR_STATUS,
     variables: confirmado
   })
   console.log(atendimentoCondirmado)
 
   console.log(emEntrega)
-  const atendimentoEmEntrega = await mutate({
-    mutation: ALTERAR_STATUS,
+  const atendimentoEmEntrega = await client.mutate({
+    mutation: query.ALTERAR_STATUS,
     variables: emEntrega
   })
   console.log(atendimentoEmEntrega)
 
   console.log(pagamentoNoDinheiroComTroco)
-  const result = await mutate({
-    mutation: LANCAR_PAGAMENTO,
+  const result = await client.mutate({
+    mutation: query.LANCAR_PAGAMENTO,
     variables: pagamentoNoDinheiroComTroco
   })
   console.log(result)
@@ -279,15 +280,15 @@ async function lancarAtendimento (): Promise<void> {
   }
 
   console.log(pagamentoNoCartao)
-  const pagamentoNoCartaoLancado = await mutate({
-    mutation: LANCAR_PAGAMENTO,
+  const pagamentoNoCartaoLancado = await client.mutate({
+    mutation: query.LANCAR_PAGAMENTO,
     variables: pagamentoNoCartao
   })
   console.log(pagamentoNoCartaoLancado)
 
   console.log(auditarAtendimento)
-  const atendimentoAuditado = await mutate({
-    mutation: AUDITAR_EARQUIVAR,
+  const atendimentoAuditado = await client.mutate({
+    mutation: query.AUDITAR_EARQUIVAR,
     variables: auditarAtendimento
   })
   console.log(atendimentoAuditado)
