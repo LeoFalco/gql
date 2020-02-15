@@ -1,5 +1,6 @@
 import { Status, Atendimento, PrismaClient } from '@prisma/client'
 import { Pagination, ItemInput, PagamentoInput } from '../model'
+import { ASTDefinitionBuilder } from 'graphql/utilities/buildASTSchema'
 
 const ALL_FIELDS = {
   cliente: true,
@@ -502,7 +503,7 @@ export class AtendimentoService {
     })
   }
 
-  auditar (atendimento: Atendimento): void {
+  async auditar (atendimento: Atendimento): Promise<void> {
     if (atendimento.status === Status.CANCELADO) {
       return
     }
@@ -531,7 +532,15 @@ export class AtendimentoService {
       })
     }
 
-    const somaValorItem = atendimento.itens
+    const itens = await this.prisma.item.findMany({
+      where: {
+        atendimento: {
+          id: atendimento.id
+        }
+      }
+    })
+
+    const somaValorItem = itens
       .filter(item => !item.cancelado)
       .map(item => {
         const multiply = item.quantidade * item.precoUnitario
@@ -559,7 +568,15 @@ export class AtendimentoService {
       })
     }
 
-    const somaValorPagamento = atendimento.pagamentos
+    const pagamentos = await this.prisma.pagamento.findMany({
+      where: {
+        atendimento: {
+          id: atendimento.id
+        }
+      }
+    })
+
+    const somaValorPagamento = pagamentos
       .filter(pagamento => !pagamento.cancelado)
       .map(pagamento => {
         console.log(pagamento)
@@ -589,7 +606,11 @@ export class AtendimentoService {
   }
 
   async auditarEArquivar (idAtendimento: string): Promise<Atendimento> {
-    const atendimento = await this.find(idAtendimento)
+    const atendimento = await this.prisma.atendimento.findOne({
+      where: {
+        id: idAtendimento
+      }
+    })
 
     if (atendimento.arquivado) {
       throw new Error('Atendimento [Id ' + idAtendimento + '] já arquivado')
@@ -601,6 +622,6 @@ export class AtendimentoService {
 
     atendimento.arquivado = true
 
-    return atendimento
+    return this.find(idAtendimento)
   }
 }
