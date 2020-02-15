@@ -1,46 +1,42 @@
-const { startServer, stopServer } = require('../../src/server')
-const { query, mutate } = require('../../src/graphql/client')
-const spawn = require('cross-spawn')
+/* eslint-disable jest/no-hooks */
+import { startServer, stopServer } from '../../src/server'
+import { client } from '../../src/graphql/client'
+import spawn from 'cross-spawn'
 
-const {
-  INSERIR_FINALIZADORA,
-  INSERIR_PRODUTO,
-  INSERIR_CLIENTE,
-  ABRIR_ATENDIMENTO,
-  LANCAR_ITEM,
-  LANCAR_PAGAMENTO,
-  ALTERAR_STATUS,
-  AUDITAR_EARQUIVAR,
-  ATENDIMENTOS,
-  PRODUTOS
-} = require('../../src/graphql/query')
+import * as query from '../../src/graphql/query'
+import { Server } from 'http'
 
-let server
-beforeAll(async () => {
-  spawn.sync('npm', ['run', 'clean-data'], { stdio: 'inherit' }) // aplica migracao
-  // server = await startServer()
-})
+let server: Server
 
-afterAll(async () => {
-  if (server) {
-    await stopServer(server)
-  }
-})
-
-describe('Atendimentos', function () {
-  it('Query atendimentos shoud respond with data', async function () {
-    const result = await query({
-      query: ATENDIMENTOS
-    })
-    expect(result.data).toBeInstanceOf(Array)
+describe('integration tests', function () {
+  beforeAll(async () => {
+    spawn.sync('npm', ['run', 'clean-data'], { stdio: 'inherit' }) // aplica migracao
+    server = await startServer()
   })
-})
 
-describe('Produtos', function () {
-  it('Query produtos shoud respond with data', async function () {
-    const result = await query({
-      query: PRODUTOS
+  afterAll(async () => {
+    if (server) {
+      stopServer(server)
+    }
+  })
+
+  describe('atendimentos', function () {
+    it('query atendimentos shoud respond with data', async () => {
+      expect.assertions(1)
+      const result = await client.query({
+        query: query.ATENDIMENTOS
+      })
+      expect(result.data).toBeInstanceOf(Array)
     })
-    expect(result.data).toBeInstanceOf(Array)
+  })
+
+  describe('produtos', function () {
+    it('query produtos shoud respond with data', async function () {
+      expect.assertions(1)
+      const result = await client.query({
+        query: query.PRODUTOS
+      })
+      expect(result.data).toBeInstanceOf(Array)
+    })
   })
 })

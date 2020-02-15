@@ -15,16 +15,11 @@ function createServer () : GraphQLServer {
 
 const server = createServer()
 
-async function startServer () : Promise<Server> {
+export async function startServer () : Promise<Server> {
   return server.start(() => console.log('🚀 Server ready at: ' + config.appUrl))
 }
 
-function stopServer (httpServer: Server): void{
+export function stopServer (httpServer: Server): void{
   httpServer.close()
   console.log('server down: ' + config)
-}
-
-export default {
-  startServer,
-  stopServer
 }
