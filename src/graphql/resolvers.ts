@@ -7,6 +7,9 @@ import { ClienteService } from '../services/cliente-service'
 import { ProdutoInput, ClienteInput, EnderecoInput } from '../model'
 import { AtendimentoService } from '../services/atendimento-service'
 
+import { cleanData } from '../../bin/clean-data/clean-data'
+import { seed } from '../../bin/seed/seed'
+
 export const Query = {
   hello: (_: any, { nome }: any): string => new HelloService().hello(nome),
 
@@ -14,7 +17,11 @@ export const Query = {
     return new ProdutoService(prisma).list()
   },
 
-  finalizadoras: async (_: any, args: any, { prisma }: any): Promise<Finalizadora[]> => {
+  finalizadoras: async (
+    _: any,
+    args: any,
+    { prisma }: any
+  ): Promise<Finalizadora[]> => {
     return new FinalizadoraService(prisma).list()
   },
 
@@ -22,46 +29,110 @@ export const Query = {
     return new ClienteService(prisma).list()
   },
 
-  atendimentos: async (_: any, { skip, first }: any, { prisma }: any) : Promise<Atendimento[]> => {
+  atendimentos: async (
+    _: any,
+    { skip, first }: any,
+    { prisma }: any
+  ): Promise<Atendimento[]> => {
     return new AtendimentoService(prisma).list({ skip, first })
   },
 
-  atendimento: async (_: any, { id }: any, { prisma }: any): Promise<Atendimento> => {
+  atendimento: async (
+    _: any,
+    { id }: any,
+    { prisma }: any
+  ): Promise<Atendimento> => {
     return new AtendimentoService(prisma).find(id)
+  },
+
+  cleanData: async (): Promise<string> => {
+    await cleanData()
+
+    return 'suces'
+  },
+
+  seed: async (): Promise<string> => {
+    await cleanData()
+
+    return 'suces'
   }
 }
 
 export const Mutation = {
-
-  inserirProduto: async (_: any, { produtoInput }: { produtoInput: ProdutoInput }, { prisma }: any): Promise<Produto> => {
+  inserirProduto: async (
+    _: any,
+    { produtoInput }: { produtoInput: ProdutoInput },
+    { prisma }: any
+  ): Promise<Produto> => {
     return new ProdutoService(prisma).save(produtoInput)
   },
 
-  inserirFinalizadora: async (_: any, { finalizadoraInput }: any, { prisma }: any): Promise<Finalizadora> => {
+  inserirFinalizadora: async (
+    _: any,
+    { finalizadoraInput }: any,
+    { prisma }: any
+  ): Promise<Finalizadora> => {
     return new FinalizadoraService(prisma).save(finalizadoraInput)
   },
 
-  inserirCliente: async (_: any, { clienteInput, enderecoInput }: { clienteInput: ClienteInput, enderecoInput: EnderecoInput}, { prisma }: any): Promise<Cliente> => {
+  inserirCliente: async (
+    _: any,
+    {
+      clienteInput,
+      enderecoInput
+    }: { clienteInput: ClienteInput; enderecoInput: EnderecoInput },
+    { prisma }: any
+  ): Promise<Cliente> => {
     return new ClienteService(prisma).save({ clienteInput, enderecoInput })
   },
 
-  abrirAtendimento: async (_: any, { atendimentoInput }: any, { prisma }: any): Promise<Atendimento> => {
+  abrirAtendimento: async (
+    _: any,
+    { atendimentoInput }: any,
+    { prisma }: any
+  ): Promise<Atendimento> => {
     return new AtendimentoService(prisma).abrirAtendimento(atendimentoInput)
   },
 
-  lancarItem: async (_: any, { idAtendimento, itemInput }: any, { prisma }: any): Promise<Atendimento> => {
-    return new AtendimentoService(prisma).lancarItem({ idAtendimento, itemInput })
+  lancarItem: async (
+    _: any,
+    { idAtendimento, itemInput }: any,
+    { prisma }: any
+  ): Promise<Atendimento> => {
+    return new AtendimentoService(prisma).lancarItem({
+      idAtendimento,
+      itemInput
+    })
   },
 
-  alterarStatus: async (_: any, { idAtendimento, status }: any, { prisma }: any): Promise<Atendimento> => {
-    return new AtendimentoService(prisma).alterarStatus({ idAtendimento, status })
+  alterarStatus: async (
+    _: any,
+    { idAtendimento, status }: any,
+    { prisma }: any
+  ): Promise<Atendimento> => {
+    return new AtendimentoService(prisma).alterarStatus({
+      idAtendimento,
+      status
+    })
   },
 
-  lancarPagamento: async (_: any, { idAtendimento, pagamentoInput }: any, { prisma }: any): Promise<Atendimento> => {
-    return new AtendimentoService(prisma).lancarPagamento({ idAtendimento, pagamentoInput })
+  lancarPagamento: async (
+    _: any,
+    { idAtendimento, pagamentoInput }: any,
+    { prisma }: any
+  ): Promise<Atendimento> => {
+    return new AtendimentoService(prisma).lancarPagamento({
+      idAtendimento,
+      pagamentoInput
+    })
   },
 
-  auditarEArquivar: async (_: any, { idAtendimento }: any, { prisma }: any): Promise<Atendimento> => {
+  auditarEArquivar: async (
+    _: any,
+    { idAtendimento }: any,
+    { prisma }: any
+  ): Promise<Atendimento> => {
     return new AtendimentoService(prisma).auditarEArquivar(idAtendimento)
   }
+
 }

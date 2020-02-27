@@ -1,7 +1,7 @@
 
-const isProduction = (process.env.PROD || 'false') === 'true'
+const isProduction = true // (process.env.PROD || 'false') === 'true'
 
-const appUrl : string = isProduction ? 'https://gql-leo.herokuapp.com/' : 'http://localhost:4000'
+const appUrl: string = isProduction ? 'https://gql-leo.herokuapp.com/' : 'http://localhost:4000'
 
 export interface DatabaseConfig {
   host: string;
@@ -12,10 +12,9 @@ export interface DatabaseConfig {
   port: number;
 }
 
-function credentialsFromEnv (): DatabaseConfig {
+function credentialsFromEnv(): DatabaseConfig {
   // exemple url mysql://user:pass@host:port/database?reconnect=true
-  const connectionString = process.env.GQL_DATABASE_URL || 'mysql://tsv0j2hl5m7q14l2:y1uzfzvtvo7kuwhp@g3v9lgqa8h5nq05o.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/c572ymepzv3e1tq5'
-  // const connectionString = 'mysql://root:202cb962ac59075b964b07152d234b70@localhost:3306/gqltest?reconnect=true'
+  const connectionString = 'mysql://tsv0j2hl5m7q14l2:y1uzfzvtvo7kuwhp@g3v9lgqa8h5nq05o.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/c572ymepzv3e1tq5'
 
   if (!connectionString) {
     throw new Error('GQL_DATANASE_URL variable not provided')

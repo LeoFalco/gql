@@ -1,4 +1,5 @@
 scalar DateTime
+scalar void 
 
 input ClienteInput {
 	id: String
@@ -112,7 +113,10 @@ type Query {
 	finalizadoras: [Finalizadora]
 	clientes: [Cliente]
 	atendimento(id: String!): Atendimento
-	atendimentos(skip: Int, first: Int): [Atendimento]
+	atendimentos(skip: Int, first: Int): [Atendimento], 
+
+	cleanData: void
+	seed: void
 }
 
 
