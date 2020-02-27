@@ -23,7 +23,7 @@
   },
   "scripts": {
     "test": "jest",
-    "start": "ts-node-dev --no-notify --respawn --transpileOnly ./src",
+    "start": "ts-node ./src",
     "postinstall": "npm install rimraf prisma2 -g && prisma2 generate",
     "generate-schema": "prisma2 migrate save --name init --experimental",
     "migrate": "prisma2 migrate up --experimental --verbose",
