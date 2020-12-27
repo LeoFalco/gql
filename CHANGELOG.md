@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.70](https://github.com/LeoFalco/gql/compare/v1.0.69...v1.0.70) (2020-12-27)
+
+
+### Bug Fixes
+
+* **deps:** update apollo graphql packages to v2.19.1 ([f246480](https://github.com/LeoFalco/gql/commit/f24648028264b89d0a7223dcb07f4190147c78d5))
+* **deps:** update dependency eslint-config-prettier to v7.1.0 ([a63e9cc](https://github.com/LeoFalco/gql/commit/a63e9cc0994024c1a3c6acebd6eab229aef54d5a))
+
+
+
+
+
+## [1.0.70](https://github.com/LeoFalco/gql/compare/v1.0.69...v1.0.70) (2020-12-27)
+
+
+### Bug Fixes
+
+* **deps:** update apollo graphql packages to v2.19.1 ([f246480](https://github.com/LeoFalco/gql/commit/f24648028264b89d0a7223dcb07f4190147c78d5))
+* **deps:** update dependency eslint-config-prettier to v7.1.0 ([a63e9cc](https://github.com/LeoFalco/gql/commit/a63e9cc0994024c1a3c6acebd6eab229aef54d5a))
+
+
+
+
+
 ## [1.0.69](https://github.com/LeoFalco/gql/compare/v1.0.68...v1.0.69) (2020-12-27)
 
 
