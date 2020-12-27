@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.77](https://github.com/LeoFalco/gql/compare/v1.0.76...v1.0.77) (2020-12-27)
+
+
+### Bug Fixes
+
+* **deps:** update prisma monorepo to v2.13.1 ([1f4133d](https://github.com/LeoFalco/gql/commit/1f4133dca44424fc759344e62b6599a9da96543f))
+
+
+
+
+
+## [1.0.77](https://github.com/LeoFalco/gql/compare/v1.0.76...v1.0.77) (2020-12-27)
+
+
+### Bug Fixes
+
+* **deps:** update prisma monorepo to v2.13.1 ([1f4133d](https://github.com/LeoFalco/gql/commit/1f4133dca44424fc759344e62b6599a9da96543f))
+
+
+
+
+
 ## [1.0.76](https://github.com/LeoFalco/gql/compare/v1.0.75...v1.0.76) (2020-12-27)
 
 
