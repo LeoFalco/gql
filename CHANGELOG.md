@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.68](https://github.com/LeoFalco/gql/compare/v1.0.67...v1.0.68) (2020-12-27)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-config-prettier to v7 ([a0e1265](https://github.com/LeoFalco/gql/commit/a0e1265f147af66be697112fe5ff9eb1f2956dd3))
+* **deps:** update dependency eslint-plugin-prettier to v3.2.0 ([e8dd6b7](https://github.com/LeoFalco/gql/commit/e8dd6b7047245108848294221a85ac32ebbfd984))
+* **deps:** update dependency npm to v6.14.9 ([4b43cae](https://github.com/LeoFalco/gql/commit/4b43caea408994620a6f8aee58319999f138e29b))
+* **deps:** update dependency pg to v8.5.0 ([8f024b7](https://github.com/LeoFalco/gql/commit/8f024b71c2d0ce6aa5f277deabbd0be7980dc334))
+* **deps:** update dependency pg to v8.5.1 ([2cf2394](https://github.com/LeoFalco/gql/commit/2cf23941d99011cff9eb57205bbd43a57526425a))
+* **deps:** update dependency ts-node to v9.1.0 ([c43dfec](https://github.com/LeoFalco/gql/commit/c43dfec9ebf3c239ca525e67fc28f3554302d905))
+* **deps:** update dependency ts-node to v9.1.1 ([e479746](https://github.com/LeoFalco/gql/commit/e479746a395e2cf49bc7a978336c4eb6ce99cb18))
+* **deps:** update dependency typescript to v4.1.2 ([0520bca](https://github.com/LeoFalco/gql/commit/0520bcace46431539e61cd1779295041f36e75f7))
+* **deps:** update prisma monorepo to v2.11.0 ([7a36c47](https://github.com/LeoFalco/gql/commit/7a36c47b5e207e61dff91b88ad500ff0f82d68b2))
+* **deps:** update prisma monorepo to v2.12.0 ([b3e608d](https://github.com/LeoFalco/gql/commit/b3e608dd6bce4df3b64083acde60b54c919aeb84))
+* publish ([8963a6e](https://github.com/LeoFalco/gql/commit/8963a6e658703ee142ac739fc5fde283a0d6f7aa))
+* **deps:** update prisma monorepo to v2.12.1 ([bd5e377](https://github.com/LeoFalco/gql/commit/bd5e377d83cb4c8dde650a2022d60da05bd813ab))
+* **deps:** update prisma monorepo to v2.13.0 ([e7d94b9](https://github.com/LeoFalco/gql/commit/e7d94b9feacea719b290dc49313bdc688f5b7946))
+* **deps:** update sentry monorepo to v5.27.4 ([ee68150](https://github.com/LeoFalco/gql/commit/ee68150e9961ee876be9d9d8520d3732b9496211))
+* **deps:** update sentry monorepo to v5.27.5 ([6ffb0c5](https://github.com/LeoFalco/gql/commit/6ffb0c5a8b169c5e05e80f19d6bb6f92af5ef5ec))
+* **deps:** update sentry monorepo to v5.27.6 ([02b6c8f](https://github.com/LeoFalco/gql/commit/02b6c8f7c9be5b68131714240f0d1375276f9bff))
+* **deps:** update sentry monorepo to v5.28.0 ([e9a9ffa](https://github.com/LeoFalco/gql/commit/e9a9ffa514221581e1acf891d8b1a315933cbf00))
+* **deps:** update sentry monorepo to v5.29.0 ([504e853](https://github.com/LeoFalco/gql/commit/504e853f344aae75307431ba3217a4acacb0c76d))
+
+
+
+
+
+## [1.0.68](https://github.com/LeoFalco/gql/compare/v1.0.67...v1.0.68) (2020-12-27)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-config-prettier to v7 ([a0e1265](https://github.com/LeoFalco/gql/commit/a0e1265f147af66be697112fe5ff9eb1f2956dd3))
+* **deps:** update dependency eslint-plugin-prettier to v3.2.0 ([e8dd6b7](https://github.com/LeoFalco/gql/commit/e8dd6b7047245108848294221a85ac32ebbfd984))
+* **deps:** update dependency npm to v6.14.9 ([4b43cae](https://github.com/LeoFalco/gql/commit/4b43caea408994620a6f8aee58319999f138e29b))
+* **deps:** update dependency pg to v8.5.0 ([8f024b7](https://github.com/LeoFalco/gql/commit/8f024b71c2d0ce6aa5f277deabbd0be7980dc334))
+* **deps:** update dependency pg to v8.5.1 ([2cf2394](https://github.com/LeoFalco/gql/commit/2cf23941d99011cff9eb57205bbd43a57526425a))
+* **deps:** update dependency ts-node to v9.1.0 ([c43dfec](https://github.com/LeoFalco/gql/commit/c43dfec9ebf3c239ca525e67fc28f3554302d905))
+* **deps:** update dependency ts-node to v9.1.1 ([e479746](https://github.com/LeoFalco/gql/commit/e479746a395e2cf49bc7a978336c4eb6ce99cb18))
+* **deps:** update dependency typescript to v4.1.2 ([0520bca](https://github.com/LeoFalco/gql/commit/0520bcace46431539e61cd1779295041f36e75f7))
+* **deps:** update prisma monorepo to v2.11.0 ([7a36c47](https://github.com/LeoFalco/gql/commit/7a36c47b5e207e61dff91b88ad500ff0f82d68b2))
+* **deps:** update prisma monorepo to v2.12.0 ([b3e608d](https://github.com/LeoFalco/gql/commit/b3e608dd6bce4df3b64083acde60b54c919aeb84))
+* publish ([8963a6e](https://github.com/LeoFalco/gql/commit/8963a6e658703ee142ac739fc5fde283a0d6f7aa))
+* **deps:** update prisma monorepo to v2.12.1 ([bd5e377](https://github.com/LeoFalco/gql/commit/bd5e377d83cb4c8dde650a2022d60da05bd813ab))
+* **deps:** update prisma monorepo to v2.13.0 ([e7d94b9](https://github.com/LeoFalco/gql/commit/e7d94b9feacea719b290dc49313bdc688f5b7946))
+* **deps:** update sentry monorepo to v5.27.4 ([ee68150](https://github.com/LeoFalco/gql/commit/ee68150e9961ee876be9d9d8520d3732b9496211))
+* **deps:** update sentry monorepo to v5.27.5 ([6ffb0c5](https://github.com/LeoFalco/gql/commit/6ffb0c5a8b169c5e05e80f19d6bb6f92af5ef5ec))
+* **deps:** update sentry monorepo to v5.27.6 ([02b6c8f](https://github.com/LeoFalco/gql/commit/02b6c8f7c9be5b68131714240f0d1375276f9bff))
+* **deps:** update sentry monorepo to v5.28.0 ([e9a9ffa](https://github.com/LeoFalco/gql/commit/e9a9ffa514221581e1acf891d8b1a315933cbf00))
+* **deps:** update sentry monorepo to v5.29.0 ([504e853](https://github.com/LeoFalco/gql/commit/504e853f344aae75307431ba3217a4acacb0c76d))
+
+
+
+
+
 ## [1.0.67](https://github.com/LeoFalco/gql/compare/v1.0.65...v1.0.67) (2020-11-08)
 
 
