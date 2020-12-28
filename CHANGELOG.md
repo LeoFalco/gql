@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.78](https://github.com/LeoFalco/gql/compare/v1.0.77...v1.0.78) (2020-12-28)
+
+**Note:** Version bump only for package gql
+
+
+
+
+
+## [1.0.78](https://github.com/LeoFalco/gql/compare/v1.0.77...v1.0.78) (2020-12-28)
+
+**Note:** Version bump only for package gql
+
+
+
+
+
 ## [1.0.77](https://github.com/LeoFalco/gql/compare/v1.0.76...v1.0.77) (2020-12-27)
 
 
