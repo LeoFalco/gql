@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.99](https://github.com/LeoFalco/gql/compare/v1.0.98...v1.0.99) (2021-01-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency commitizen to v4.2.3 ([510eff3](https://github.com/LeoFalco/gql/commit/510eff31731c49476963dee7d51ef9b71545f497))
+
+
+
+
+
+## [1.0.99](https://github.com/LeoFalco/gql/compare/v1.0.98...v1.0.99) (2021-01-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency commitizen to v4.2.3 ([510eff3](https://github.com/LeoFalco/gql/commit/510eff31731c49476963dee7d51ef9b71545f497))
+
+
+
+
+
 ## [1.0.98](https://github.com/LeoFalco/gql/compare/v1.0.97...v1.0.98) (2021-01-15)
 
 
