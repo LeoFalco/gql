@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.106](https://github.com/LeoFalco/gql/compare/v1.0.105...v1.0.106) (2021-01-22)
+
+
+### Bug Fixes
+
+* **deps:** update sentry monorepo to v6 ([684d08e](https://github.com/LeoFalco/gql/commit/684d08e374f1f164f3b7820e125c5291165f72c3))
+
+
+
+
+
+## [1.0.106](https://github.com/LeoFalco/gql/compare/v1.0.105...v1.0.106) (2021-01-22)
+
+
+### Bug Fixes
+
+* **deps:** update sentry monorepo to v6 ([684d08e](https://github.com/LeoFalco/gql/commit/684d08e374f1f164f3b7820e125c5291165f72c3))
+
+
+
+
+
 ## [1.0.105](https://github.com/LeoFalco/gql/compare/v1.0.104...v1.0.105) (2021-01-21)
 
 
