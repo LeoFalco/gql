@@ -77,7 +77,7 @@
     "prettier": "2.2.1",
     "rimraf": "3.0.2",
     "sucrase": "3.17.0",
-    "supertest": "6.1.1",
+    "supertest": "6.1.2",
     "ts-jest": "26.4.4",
     "tslint": "6.1.3"
   },
