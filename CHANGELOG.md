@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.112](https://github.com/LeoFalco/gql/compare/v1.0.111...v1.0.112) (2021-01-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency graphql to v15.5.0 ([ac616b2](https://github.com/LeoFalco/gql/commit/ac616b268380c3cb6d6f4c152345822e9e11dd2a))
+
+
+
+
+
+## [1.0.112](https://github.com/LeoFalco/gql/compare/v1.0.111...v1.0.112) (2021-01-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency graphql to v15.5.0 ([ac616b2](https://github.com/LeoFalco/gql/commit/ac616b268380c3cb6d6f4c152345822e9e11dd2a))
+
+
+
+
+
 ## [1.0.111](https://github.com/LeoFalco/gql/compare/v1.0.110...v1.0.111) (2021-01-26)
 
 **Note:** Version bump only for package gql
