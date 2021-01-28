@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.115](https://github.com/LeoFalco/gql/compare/v1.0.114...v1.0.115) (2021-01-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency npm to v7.5.0 ([3b0fbef](https://github.com/LeoFalco/gql/commit/3b0fbef775fbe6ddda65063497fbd1096deea2ac))
+
+
+
+
+
+## [1.0.115](https://github.com/LeoFalco/gql/compare/v1.0.114...v1.0.115) (2021-01-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency npm to v7.5.0 ([3b0fbef](https://github.com/LeoFalco/gql/commit/3b0fbef775fbe6ddda65063497fbd1096deea2ac))
+
+
+
+
+
 ## [1.0.114](https://github.com/LeoFalco/gql/compare/v1.0.113...v1.0.114) (2021-01-28)
 
 **Note:** Version bump only for package gql
