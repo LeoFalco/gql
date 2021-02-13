@@ -100,7 +100,7 @@ jobs:
           SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
           SENTRY_ORG: leofalco
 
-      - uses: akhileshns/heroku-deploy@v3.10.9
+      - uses: akhileshns/heroku-deploy@v3.11.10
         if: github.ref == 'refs/heads/master'
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
