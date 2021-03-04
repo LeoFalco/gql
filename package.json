@@ -57,7 +57,7 @@
     "@types/jest": "26.0.20",
     "@types/node": "10.17.54",
     "@types/node-fetch": "2.5.8",
-    "@types/pg": "7.14.10",
+    "@types/pg": "7.14.11",
     "@typescript-eslint/eslint-plugin": "4.16.1",
     "@typescript-eslint/parser": "4.16.1",
     "apollo-server-testing": "2.21.0",
