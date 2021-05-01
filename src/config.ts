@@ -1,10 +1,11 @@
 import * as packageJson from '../package.json'
-const isProduction = process.env.ENVIRONMENT === 'prod'
+const env = process.env.ENVIRONMENT || 'dev'
+const isProduction = env === 'prod'
 
 const config = {
   isProduction: isProduction,
   environment: process.env.ENVIRONMENT || null,
-  databaseUrl: process.env.DATABASE_URL || null,
+  databaseUrl: process.env.DATABASE_URL || 'postgres://postgres:test@localhost:5432/gql',
   domain: process.env.DOMAIN || null,
   port: process.env.PORT || 4000,
   version: packageJson.version,

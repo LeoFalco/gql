@@ -16,10 +16,13 @@ enum Status {
 }
 
 model Cliente {
-  id       String   @id @default(cuid())
-  nome     String
-  telefone String
-  endereco Endereco
+  id          String        @id @default(cuid())
+  nome        String
+  telefone    String
+  endereco    Endereco      @relation(fields: [enderecoId], references: [id])
+  Atendimento Atendimento[]
+  enderecoId  String
+
   @@map("cliente")
 }
 
@@ -28,6 +31,7 @@ model Produto {
   descricao String
   codigo    String?
   preco     Float
+  Item      Item[]
 
   @@map("produto")
 }
@@ -39,15 +43,18 @@ model Item {
   precoUnitario Float
   valor         Float
   cancelado     Boolean
-  produto       Produto
-  atendimento   Atendimento @relation(references: [id])
+  produto       Produto     @relation(fields: [produtoId], references: [id])
+  atendimento   Atendimento @relation(references: [id], fields: [atendimentoId])
+  produtoId     String
+  atendimentoId String
 
   @@map("item")
 }
 
 model Finalizadora {
-  id        String @id @default(cuid())
+  id        String      @id @default(cuid())
   descricao String
+  Pagamento Pagamento[]
 
   @@map("finalizadora")
 }
@@ -57,25 +64,30 @@ model Pagamento {
   valor        Float
   troco        Float
   cancelado    Boolean      @default(false)
-  finalizadora Finalizadora
-  atendimento  Atendimento  @relation(references: [id])
+  finalizadora Finalizadora @relation(fields: [finalizadoraId], references: [id])
+  atendimento  Atendimento  @relation(references: [id], fields: [atendimentoId])
+
+  finalizadoraId String
+  atendimentoId  String
 
   @@map("pagamento")
 }
 
 model Endereco {
-  id         String @id @default(cuid())
-  logradouro String
-  bairro     String
-  cidade     String
-  cep        String
+  id          String        @id @default(cuid())
+  logradouro  String
+  bairro      String
+  cidade      String
+  cep         String
+  Cliente     Cliente[]
+  Atendimento Atendimento[]
 
   @@map("endereco")
 }
 
 model Atendimento {
   id               String      @id @default(cuid())
-  cliente          Cliente?
+  cliente          Cliente?    @relation(fields: [clienteId], references: [id])
   dataAbertura     DateTime    @default(now())
   dataEncerramento DateTime?
   status           Status      @default(ABERTO)
@@ -85,8 +97,10 @@ model Atendimento {
   valorEntrega     Float       @default(0)
   valorTotal       Float       @default(0)
   valorPago        Float       @default(0)
-  enderecoEntrega  Endereco?
+  enderecoEntrega  Endereco?   @relation(fields: [enderecoId], references: [id])
   arquivado        Boolean     @default(false)
+  clienteId        String?
+  enderecoId       String?
 
   @@map("atendimento")
 }

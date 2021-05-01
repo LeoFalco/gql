@@ -2,7 +2,7 @@ import config from '../src/config'
 import { blue } from 'chalk'
 import { Client } from 'pg'
 import { URL } from 'url'
-
+import * as dotenv from  'dotenv'
 const INFO = blue('[INFO]')
 
 async function connect(): Promise<void> {
@@ -37,3 +37,7 @@ async function run() {
 }
 
 run()
+  .catch(e => {
+    console.log(e);
+    process.exit(1)
+  })
