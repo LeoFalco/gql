@@ -1,5 +1,6 @@
 import server from './server'
 import config from './config'
+
 server
   .listen({
     port: config.port,

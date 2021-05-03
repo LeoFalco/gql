@@ -107,5 +107,5 @@ jobs:
           heroku_app_name: gql-leo
           heroku_email: leonardo.falco@outlook.com
           healthcheck: https://gql-leo.herokuapp.com/
-          checkstring: ok
+          delay: 15
 
