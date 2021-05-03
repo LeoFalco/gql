@@ -105,5 +105,7 @@ jobs:
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: gql-leo
-          heroku_email: 'leonardo.falco@outlook.com'
+          heroku_email: leonardo.falco@outlook.com
+          healthcheck: https://gql-leo.herokuapp.com/
+          checkstring: ok
 
