@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.133](https://github.com/LeoFalco/gql/compare/v1.0.132...v1.0.133) (2021-05-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @prisma/client to v2.21.2 ([0d227a4](https://github.com/LeoFalco/gql/commit/0d227a49b1d96f27fb057a6b6067622a42efc8de))
+
+
+
+
+
+## [1.0.133](https://github.com/LeoFalco/gql/compare/v1.0.132...v1.0.133) (2021-05-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @prisma/client to v2.21.2 ([0d227a4](https://github.com/LeoFalco/gql/commit/0d227a49b1d96f27fb057a6b6067622a42efc8de))
+
+
+
+
+
 ## [1.0.132](https://github.com/LeoFalco/gql/compare/v1.0.131...v1.0.132) (2021-05-03)
 
 
