@@ -28,7 +28,7 @@
     "commit": "npx cz"
   },
   "dependencies": {
-    "@prisma/client": "2.20.1",
+    "@prisma/client": "2.21.2",
     "@sentry/node": "6.3.5",
     "@sentry/tracing": "6.3.5",
     "@types/dotenv": "8.2.0",
