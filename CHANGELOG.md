@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.132](https://github.com/LeoFalco/gql/compare/v1.0.131...v1.0.132) (2021-05-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency pg to v8.6.0 ([c3f9b90](https://github.com/LeoFalco/gql/commit/c3f9b906aeabec30c313b68bb4932deaed63618e))
+* **deps:** update dependency typescript to v4.2.4 ([161e87e](https://github.com/LeoFalco/gql/commit/161e87e8ea4f4e66e185715538f20ce389628917))
+
+
+
+
+
+## [1.0.132](https://github.com/LeoFalco/gql/compare/v1.0.131...v1.0.132) (2021-05-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency pg to v8.6.0 ([c3f9b90](https://github.com/LeoFalco/gql/commit/c3f9b906aeabec30c313b68bb4932deaed63618e))
+* **deps:** update dependency typescript to v4.2.4 ([161e87e](https://github.com/LeoFalco/gql/commit/161e87e8ea4f4e66e185715538f20ce389628917))
+
+
+
+
+
 ## [1.0.131](https://github.com/LeoFalco/gql/compare/v1.0.130...v1.0.131) (2021-05-03)
 
 **Note:** Version bump only for package gql
