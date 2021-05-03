@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.128](https://github.com/LeoFalco/gql/compare/v1.0.127...v1.0.128) (2021-05-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-prettier to v3.4.0 ([6074085](https://github.com/LeoFalco/gql/commit/607408520975ef77a4b7d3586f2eb82a0667c7b0))
+* **deps:** update sentry monorepo to v6.3.5 ([fd791be](https://github.com/LeoFalco/gql/commit/fd791be898c5cdc62b87f91ea3b144d4fc6bbfb5))
+
+
+
+
+
+## [1.0.128](https://github.com/LeoFalco/gql/compare/v1.0.127...v1.0.128) (2021-05-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-prettier to v3.4.0 ([6074085](https://github.com/LeoFalco/gql/commit/607408520975ef77a4b7d3586f2eb82a0667c7b0))
+* **deps:** update sentry monorepo to v6.3.5 ([fd791be](https://github.com/LeoFalco/gql/commit/fd791be898c5cdc62b87f91ea3b144d4fc6bbfb5))
+
+
+
+
+
 ## [1.0.127](https://github.com/LeoFalco/gql/compare/v1.0.126...v1.0.127) (2021-05-03)
 
 **Note:** Version bump only for package gql
