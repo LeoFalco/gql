@@ -3,6 +3,98 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.126](https://github.com/LeoFalco/gql/compare/v1.0.125...v1.0.126) (2021-05-03)
+
+
+### Bug Fixes
+
+* **deps:** update apollo graphql packages to v2.21.0 ([99ef990](https://github.com/LeoFalco/gql/commit/99ef99017fa05e4e2419e0b8d1eb09687abd70d2))
+* **deps:** update apollo graphql packages to v2.21.1 ([369337b](https://github.com/LeoFalco/gql/commit/369337bdd5856cd990ae69599fb6257df0eb085b))
+* **deps:** update apollo graphql packages to v2.21.2 ([b700e8d](https://github.com/LeoFalco/gql/commit/b700e8d72c1a101eccd20134bba6ff6b7fb312fe))
+* **deps:** update apollo graphql packages to v2.22.1 ([a056bc2](https://github.com/LeoFalco/gql/commit/a056bc24a046fc69c1c9381b152f063cf6ce3bdf))
+* **deps:** update apollo graphql packages to v2.22.2 ([4347118](https://github.com/LeoFalco/gql/commit/4347118e5ca0860a68063e258f1872ad1412403c))
+* **deps:** update dependency npm to v7.5.2 ([046aca4](https://github.com/LeoFalco/gql/commit/046aca4d59171738028d2ac2e98e28a2f96cf3ad))
+* **deps:** update dependency npm to v7.5.3 ([1007ddf](https://github.com/LeoFalco/gql/commit/1007ddfc913cdf150be5b5f787348649f362c16c))
+* **deps:** update dependency npm to v7.5.4 ([ba9eb4a](https://github.com/LeoFalco/gql/commit/ba9eb4a29a0116ab402959076c84729ca11b8eff))
+* **deps:** update dependency npm to v7.5.6 ([6642d1a](https://github.com/LeoFalco/gql/commit/6642d1a7efff9c9e73a404cf89b80ec6987a8347))
+* **deps:** update dependency npm to v7.6.0 ([e0a860f](https://github.com/LeoFalco/gql/commit/e0a860f8325d101b60c27edbad62db0a4632b578))
+* **deps:** update dependency npm to v7.6.1 ([cdaae29](https://github.com/LeoFalco/gql/commit/cdaae29ccf228112fbf5e3324216fe24ce7ed638))
+* **deps:** update dependency npm to v7.6.2 ([de87f79](https://github.com/LeoFalco/gql/commit/de87f79f2005d4d228fd641fd38252d763e21447))
+* **deps:** update dependency typescript to v4.2.2 ([2051054](https://github.com/LeoFalco/gql/commit/2051054fa1f9d5f8aa7209279428c2570697f4a9))
+* startup and tests ([3523612](https://github.com/LeoFalco/gql/commit/3523612d1469773685ebee3ea9a13486c388b61c))
+* **deps:** update dependency npm to v7.6.3 ([07fc055](https://github.com/LeoFalco/gql/commit/07fc055900635d205932add0116e0995e5367b51))
+* **deps:** update dependency npm to v7.7.0 ([780b85a](https://github.com/LeoFalco/gql/commit/780b85a1dd545d1b0c91506b2bee66b57a1a82a8))
+* **deps:** update dependency npm to v7.7.3 ([7e0f326](https://github.com/LeoFalco/gql/commit/7e0f32651f9144d43e751fc0c8a0adbf3540d7fe))
+* **deps:** update dependency npm to v7.7.4 ([79a903e](https://github.com/LeoFalco/gql/commit/79a903e6f2205326b356cbff8bc0ab3f522a93ba))
+* **deps:** update dependency npm to v7.7.5 ([52178ce](https://github.com/LeoFalco/gql/commit/52178ce701ea4370610830df825faa37692422f4))
+* **deps:** update dependency npm to v7.7.6 ([3dbbd4a](https://github.com/LeoFalco/gql/commit/3dbbd4a0ea2d4c531fa0f65608f3eaf166ca9016))
+* **deps:** update dependency npm to v7.8.0 ([74c0946](https://github.com/LeoFalco/gql/commit/74c0946b5712e7a416bbb6c192f11edcac79a23e))
+* **deps:** update dependency typescript to v4.1.4 ([a96635d](https://github.com/LeoFalco/gql/commit/a96635d8c5bd6bf0ca46774612b4d52c6068384c))
+* **deps:** update dependency typescript to v4.1.5 ([c42ee95](https://github.com/LeoFalco/gql/commit/c42ee959c4a24897466ed0472c6d3f7355f52efb))
+* **deps:** update dependency typescript to v4.2.3 ([e8dae30](https://github.com/LeoFalco/gql/commit/e8dae30974bf6b2cab78f2b2ecd430e9a0cab649))
+* **deps:** update prisma monorepo ([65ba9eb](https://github.com/LeoFalco/gql/commit/65ba9eb3140ae6adde70d5abe1e33da89f2b3c90))
+* **deps:** update prisma monorepo to v2.16.1 ([67b5a17](https://github.com/LeoFalco/gql/commit/67b5a172c7c0a9d8d277ffcf35b5522794c1b56a))
+* **deps:** update prisma monorepo to v2.17.0 ([ab5c3fc](https://github.com/LeoFalco/gql/commit/ab5c3fc5b2833965fbfde4dab462aad0e97a4a48))
+* **deps:** update sentry monorepo to v6.1.0 ([b62ca7f](https://github.com/LeoFalco/gql/commit/b62ca7fd30c226edd3c4ef4d3046ac7e0bd830d5))
+* **deps:** update sentry monorepo to v6.2.0 ([19c40be](https://github.com/LeoFalco/gql/commit/19c40be7b73a07d5125f0b07f383f18b12b888dc))
+* **deps:** update sentry monorepo to v6.2.1 ([f447e89](https://github.com/LeoFalco/gql/commit/f447e89ca17fde4a99eb129f635a9f34abf7697d))
+* **deps:** update sentry monorepo to v6.2.2 ([82afa01](https://github.com/LeoFalco/gql/commit/82afa01a9139fe5932441b093a7458ae4e12aec3))
+* **deps:** update sentry monorepo to v6.2.3 ([e1a8677](https://github.com/LeoFalco/gql/commit/e1a86775d134939f201f9b47cadaa08277e1dbe9))
+* **deps:** update sentry monorepo to v6.2.4 ([ce22e2d](https://github.com/LeoFalco/gql/commit/ce22e2d98c8ab4a99d798e25032d7fc13b3e7dd5))
+* **deps:** update sentry monorepo to v6.2.5 ([8204c82](https://github.com/LeoFalco/gql/commit/8204c82e1c7cb7658acb023d10a40b632861a7f3))
+* **deps:** update sentry monorepo to v6.3.0 ([b508ff6](https://github.com/LeoFalco/gql/commit/b508ff6d45b1da9c1156702dec2f0243909ec91c))
+* **deps:** update sentry monorepo to v6.3.4 ([3349e4d](https://github.com/LeoFalco/gql/commit/3349e4dd4277f0099daa431ac401be12839f63c6))
+
+
+
+
+
+## [1.0.126](https://github.com/LeoFalco/gql/compare/v1.0.125...v1.0.126) (2021-05-03)
+
+
+### Bug Fixes
+
+* **deps:** update apollo graphql packages to v2.21.0 ([99ef990](https://github.com/LeoFalco/gql/commit/99ef99017fa05e4e2419e0b8d1eb09687abd70d2))
+* **deps:** update apollo graphql packages to v2.21.1 ([369337b](https://github.com/LeoFalco/gql/commit/369337bdd5856cd990ae69599fb6257df0eb085b))
+* **deps:** update apollo graphql packages to v2.21.2 ([b700e8d](https://github.com/LeoFalco/gql/commit/b700e8d72c1a101eccd20134bba6ff6b7fb312fe))
+* **deps:** update apollo graphql packages to v2.22.1 ([a056bc2](https://github.com/LeoFalco/gql/commit/a056bc24a046fc69c1c9381b152f063cf6ce3bdf))
+* **deps:** update apollo graphql packages to v2.22.2 ([4347118](https://github.com/LeoFalco/gql/commit/4347118e5ca0860a68063e258f1872ad1412403c))
+* **deps:** update dependency npm to v7.5.2 ([046aca4](https://github.com/LeoFalco/gql/commit/046aca4d59171738028d2ac2e98e28a2f96cf3ad))
+* **deps:** update dependency npm to v7.5.3 ([1007ddf](https://github.com/LeoFalco/gql/commit/1007ddfc913cdf150be5b5f787348649f362c16c))
+* **deps:** update dependency npm to v7.5.4 ([ba9eb4a](https://github.com/LeoFalco/gql/commit/ba9eb4a29a0116ab402959076c84729ca11b8eff))
+* **deps:** update dependency npm to v7.5.6 ([6642d1a](https://github.com/LeoFalco/gql/commit/6642d1a7efff9c9e73a404cf89b80ec6987a8347))
+* **deps:** update dependency npm to v7.6.0 ([e0a860f](https://github.com/LeoFalco/gql/commit/e0a860f8325d101b60c27edbad62db0a4632b578))
+* **deps:** update dependency npm to v7.6.1 ([cdaae29](https://github.com/LeoFalco/gql/commit/cdaae29ccf228112fbf5e3324216fe24ce7ed638))
+* **deps:** update dependency npm to v7.6.2 ([de87f79](https://github.com/LeoFalco/gql/commit/de87f79f2005d4d228fd641fd38252d763e21447))
+* **deps:** update dependency typescript to v4.2.2 ([2051054](https://github.com/LeoFalco/gql/commit/2051054fa1f9d5f8aa7209279428c2570697f4a9))
+* startup and tests ([3523612](https://github.com/LeoFalco/gql/commit/3523612d1469773685ebee3ea9a13486c388b61c))
+* **deps:** update dependency npm to v7.6.3 ([07fc055](https://github.com/LeoFalco/gql/commit/07fc055900635d205932add0116e0995e5367b51))
+* **deps:** update dependency npm to v7.7.0 ([780b85a](https://github.com/LeoFalco/gql/commit/780b85a1dd545d1b0c91506b2bee66b57a1a82a8))
+* **deps:** update dependency npm to v7.7.3 ([7e0f326](https://github.com/LeoFalco/gql/commit/7e0f32651f9144d43e751fc0c8a0adbf3540d7fe))
+* **deps:** update dependency npm to v7.7.4 ([79a903e](https://github.com/LeoFalco/gql/commit/79a903e6f2205326b356cbff8bc0ab3f522a93ba))
+* **deps:** update dependency npm to v7.7.5 ([52178ce](https://github.com/LeoFalco/gql/commit/52178ce701ea4370610830df825faa37692422f4))
+* **deps:** update dependency npm to v7.7.6 ([3dbbd4a](https://github.com/LeoFalco/gql/commit/3dbbd4a0ea2d4c531fa0f65608f3eaf166ca9016))
+* **deps:** update dependency npm to v7.8.0 ([74c0946](https://github.com/LeoFalco/gql/commit/74c0946b5712e7a416bbb6c192f11edcac79a23e))
+* **deps:** update dependency typescript to v4.1.4 ([a96635d](https://github.com/LeoFalco/gql/commit/a96635d8c5bd6bf0ca46774612b4d52c6068384c))
+* **deps:** update dependency typescript to v4.1.5 ([c42ee95](https://github.com/LeoFalco/gql/commit/c42ee959c4a24897466ed0472c6d3f7355f52efb))
+* **deps:** update dependency typescript to v4.2.3 ([e8dae30](https://github.com/LeoFalco/gql/commit/e8dae30974bf6b2cab78f2b2ecd430e9a0cab649))
+* **deps:** update prisma monorepo ([65ba9eb](https://github.com/LeoFalco/gql/commit/65ba9eb3140ae6adde70d5abe1e33da89f2b3c90))
+* **deps:** update prisma monorepo to v2.16.1 ([67b5a17](https://github.com/LeoFalco/gql/commit/67b5a172c7c0a9d8d277ffcf35b5522794c1b56a))
+* **deps:** update prisma monorepo to v2.17.0 ([ab5c3fc](https://github.com/LeoFalco/gql/commit/ab5c3fc5b2833965fbfde4dab462aad0e97a4a48))
+* **deps:** update sentry monorepo to v6.1.0 ([b62ca7f](https://github.com/LeoFalco/gql/commit/b62ca7fd30c226edd3c4ef4d3046ac7e0bd830d5))
+* **deps:** update sentry monorepo to v6.2.0 ([19c40be](https://github.com/LeoFalco/gql/commit/19c40be7b73a07d5125f0b07f383f18b12b888dc))
+* **deps:** update sentry monorepo to v6.2.1 ([f447e89](https://github.com/LeoFalco/gql/commit/f447e89ca17fde4a99eb129f635a9f34abf7697d))
+* **deps:** update sentry monorepo to v6.2.2 ([82afa01](https://github.com/LeoFalco/gql/commit/82afa01a9139fe5932441b093a7458ae4e12aec3))
+* **deps:** update sentry monorepo to v6.2.3 ([e1a8677](https://github.com/LeoFalco/gql/commit/e1a86775d134939f201f9b47cadaa08277e1dbe9))
+* **deps:** update sentry monorepo to v6.2.4 ([ce22e2d](https://github.com/LeoFalco/gql/commit/ce22e2d98c8ab4a99d798e25032d7fc13b3e7dd5))
+* **deps:** update sentry monorepo to v6.2.5 ([8204c82](https://github.com/LeoFalco/gql/commit/8204c82e1c7cb7658acb023d10a40b632861a7f3))
+* **deps:** update sentry monorepo to v6.3.0 ([b508ff6](https://github.com/LeoFalco/gql/commit/b508ff6d45b1da9c1156702dec2f0243909ec91c))
+* **deps:** update sentry monorepo to v6.3.4 ([3349e4d](https://github.com/LeoFalco/gql/commit/3349e4dd4277f0099daa431ac401be12839f63c6))
+
+
+
+
+
 ## [1.0.125](https://github.com/LeoFalco/gql/compare/v1.0.124...v1.0.125) (2021-02-02)
 
 
