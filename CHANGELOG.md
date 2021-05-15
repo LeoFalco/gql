@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.136](https://github.com/LeoFalco/gql/compare/v1.0.135...v1.0.136) (2021-05-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-config-prettier to v8 ([c2d0f6f](https://github.com/LeoFalco/gql/commit/c2d0f6f0e0744f39c3bd5e2c28b1494902003a8d))
+* lint ([e0afe0e](https://github.com/LeoFalco/gql/commit/e0afe0eae165c187a36e9b90cd2e7ef5eda11ff5))
+
+
+
+
+
+## [1.0.136](https://github.com/LeoFalco/gql/compare/v1.0.135...v1.0.136) (2021-05-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-config-prettier to v8 ([c2d0f6f](https://github.com/LeoFalco/gql/commit/c2d0f6f0e0744f39c3bd5e2c28b1494902003a8d))
+* lint ([e0afe0e](https://github.com/LeoFalco/gql/commit/e0afe0eae165c187a36e9b90cd2e7ef5eda11ff5))
+
+
+
+
+
 ## [1.0.135](https://github.com/LeoFalco/gql/compare/v1.0.134...v1.0.135) (2021-05-03)
 
 **Note:** Version bump only for package gql
