@@ -19,7 +19,7 @@ module.exports = {
     'standard',
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
+    'prettier',
     'eslint-config-prettier',
     'plugin:prettier/recommended',
     'plugin:jest/all',
