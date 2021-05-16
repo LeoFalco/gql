@@ -42,7 +42,7 @@
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-prettier": "3.4.0",
     "graphql": "15.5.0",
-    "npm": "7.11.2",
+    "npm": "7.13.0",
     "pg": "8.6.0",
     "postinstall": "0.7.0",
     "sql-template-strings": "2.2.2",
