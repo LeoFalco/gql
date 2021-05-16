@@ -37,7 +37,7 @@
     "async": "3.2.0",
     "commitizen": "4.2.4",
     "cuid": "2.1.8",
-    "dotenv": "8.6.0",
+    "dotenv": "9.0.2",
     "dotenv-cli": "4.0.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-prettier": "3.4.0",
