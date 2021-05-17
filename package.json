@@ -29,8 +29,8 @@
   },
   "dependencies": {
     "@prisma/client": "2.22.1",
-    "@sentry/node": "6.3.6",
-    "@sentry/tracing": "6.3.6",
+    "@sentry/node": "6.4.0",
+    "@sentry/tracing": "6.4.0",
     "@types/dotenv": "8.2.0",
     "apollo-boost": "0.4.9",
     "apollo-server": "2.24.0",
