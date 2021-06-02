@@ -55,7 +55,7 @@
     "@sentry/cli": "1.65.0",
     "@types/cross-spawn": "6.0.2",
     "@types/jest": "26.0.23",
-    "@types/node": "14.17.1",
+    "@types/node": "14.17.2",
     "@types/node-fetch": "2.5.10",
     "@types/pg": "8.6.0",
     "@typescript-eslint/eslint-plugin": "4.26.0",
